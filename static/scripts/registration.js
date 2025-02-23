@@ -1,4 +1,4 @@
-let username = localStorage.getItem('username')
+const username = localStorage.getItem('username')
 
 if (username) {
   document.querySelector('.content').classList.remove('hidden')
