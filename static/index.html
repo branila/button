@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         {{ template "head.html" . }}
+        <link rel="stylesheet" href="/static/styles/registration.css" />
         <link rel="stylesheet" href="/static/styles/index.css" />
         <script src="/static/scripts/index.js" defer></script>
         <title>The Button - Home</title>
@@ -10,7 +11,20 @@
         {{ template "navbar.html" . }}
 
         <main>
-            {{ template "registration.html" . }}
+            <div class="registration hidden">
+                <h2>Benvenuto su The Button</h2>
+
+                <p>
+                    Inserisci il tuo nome per entrare a far parte del nostro
+                    culto:
+                </p>
+
+                <div class="form">
+                    <input type="text" placeholder="Il tuo nome" required />
+
+                    <button>Inizia</button>
+                </div>
+            </div>
 
             <button class="the-button content hidden">73</button>
         </main>

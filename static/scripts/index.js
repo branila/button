@@ -22,3 +22,24 @@ theButton.addEventListener('click', event => {
     circle.remove()
   }, 500)
 })
+
+function connectWebSocket() {
+    ws = new WebSocket(`ws://${window.location.host}/ws`)
+
+    ws.onmessage = event => {
+      const data = JSON.parse(event.data)
+
+      if (data.type === 'state') {
+        const state = JSON.parse(data.payload)
+        updateButton(state.totalClicks)
+      }
+    }
+
+    ws.onclose = () => {
+      setTimeout(connectWebSocket, 1000)
+    }
+}
+
+function updateButton(clicks) {
+  document.getElementById('click-button').textContent = clicks;
+}
