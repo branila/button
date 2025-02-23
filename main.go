@@ -6,8 +6,14 @@ import (
 )
 
 func main() {
-	http.Handle("/", http.FileServer(http.Dir("static")))
+	fs := http.FileServer(http.Dir("static"))
 
-	log.Println("Server listening on port 8080")
+	http.Handle("/", http.StripPrefix("/", fs))
+
+	http.HandleFunc("/stats", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "static/stats.html")
+	})
+
+	log.Println("Server in ascolto sulla porta 8080...")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
