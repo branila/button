@@ -5,9 +5,3 @@ links.forEach(link => {
     link.classList.add('current');
   }
 })
-
-const menuButton = document.querySelector('nav .menu')
-
-menuButton.addEventListener('click', () => {
-  document.querySelector('nav .links').classList.toggle('active')
-})
