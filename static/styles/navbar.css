@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
+    height: 100px;
+}
+
+nav .links a {
+    font-size: 24px;
+    margin-left: 12px;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent);
+    transition: 0.2s;
+}
+
+nav .title {
+    font-size: 32px;
+}
+
+nav .links a.current {
+    color: var(--accent) !important;
+}

@@ -1,0 +1,15 @@
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    height: 100px;
+    padding-inline: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}

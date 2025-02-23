@@ -1,0 +1,55 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.registration h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.registration p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.registration .form {
+    display: flex;
+}
+
+.registration .form input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: 0;
+    padding-left: 8px;
+}
+
+.registration .form input:hover {
+    border-color: var(--accent);
+}
+
+.registration .form input:focus {
+    border-color: var(--accent);
+    color: var(--accent);
+    outline: none;
+}
+
+.registration .form button {
+    height: 40px;
+    padding-inline: 16px;
+    border: 1px solid var(--dark);
+    border-left: 0;
+    background-color: var(--white);
+    color: var(--dark);
+    cursor: pointer;
+    outline: none;
+}
+
+.registration .form button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}

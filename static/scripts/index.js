@@ -1,6 +1,6 @@
-const button = document.querySelector('button')
+const theButton = document.querySelector('.the-button')
 
-button.addEventListener('click', event => {
+theButton.addEventListener('click', event => {
   const x = event.clientX
 	const y = event.clientY
 
@@ -16,7 +16,7 @@ button.addEventListener('click', event => {
   circle.style.left = xInside + 'px'
 
 
-  button.appendChild(circle)
+  theButton.appendChild(circle)
 
   setTimeout(() => {
     circle.remove()
