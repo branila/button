@@ -44,3 +44,15 @@ main {
 .hidden {
     display: none !important;
 }
+
+@media (max-width: 600px) {
+    main {
+        height: calc(100svh - 144px);
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding-inline: 8px;
+    }
+}

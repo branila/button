@@ -6,10 +6,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: max(16px, 1vw);
+    flex-wrap: wrap;
 }
 
 footer a {
     color: var(--white);
     text-decoration: underline;
+}
+
+footer span {
+    text-align: center;
 }

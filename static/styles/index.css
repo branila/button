@@ -40,3 +40,19 @@ main {
         opacity: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .the-button {
+        width: 250px;
+        height: 250px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding-inline: 8px;
+    }
+}
+
+@media;

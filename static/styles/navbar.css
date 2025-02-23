@@ -3,7 +3,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-inline: 24px;
-    height: 100px;
+    min-height: 100px;
+    padding-block: 16px;
 }
 
 nav .links a {
@@ -24,4 +25,29 @@ nav .title {
 
 nav .links a.current {
     color: var(--accent) !important;
+}
+
+.menu {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 24px;
+        align-items: flex-start;
+    }
+
+    nav .links {
+        flex-direction: column;
+        display: flex;
+        padding-left: 0;
+    }
+
+    nav .links a {
+        padding-bottom: 8px;
+    }
 }
