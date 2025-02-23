@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "marsden", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+:root {
+    --dark: #000000;
+    --light: #ffffff;
+    --accent: #143ee2;
+}
+
+@font-face {
+    font-family: "marsden";
+    src: url("/static/marsden/marsden-bold.woff2") format("woff2")
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "marsden";
+    src: url("/static/marsden/marsden-regular.woff2") format("woff2");
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* Navbar Style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
+    height: 100px;
+}
+
+nav .links a {
+    font-size: 24px;
+    margin-left: 12px;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent);
+    transition: 0.2s;
+}
+
+nav .title {
+    font-size: 32px;
+}
+
+nav .links a.current {
+    color: var(--accent) !important;
+}
+
+/* Footer Style */
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    height: 100px;
+    padding-inline: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Content Style */
+
+main {
+    height: calc(100svh - 100px);
+    padding-inline: 24px;
+}
+
+/* Content Style */
+
+main {
+    height: calc(100svh - 100px);
+    padding-inline: 24px;
+}
